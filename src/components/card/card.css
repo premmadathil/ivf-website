@@ -1,0 +1,26 @@
+.card-wrapper {
+  background-color: #fff;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-top: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  display: flex;
+}
+.card-text,
+.card-text-home {
+  padding-left: 1.5rem;
+}
+.card-text-home h6 {
+  color: #003e3a;
+  font-size: 28px;
+  font-weight: 700;
+}
+.card-text-home p,
+.card-text p {
+  color: #6c6c6c;
+}

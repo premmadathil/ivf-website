@@ -1,0 +1,71 @@
+.container figcaption {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  text-transform: capitalize;
+}
+
+.container figcaption h3.gradient-text {
+  text-transform: uppercase !important;
+  background: linear-gradient(89.99deg, #00dccb 36.88%, #00f400 102.08%),
+    #ffffff;
+  background: linear-gradient(89.99deg,
+      color(display-p3 0.051 0.847 0.792) 36.88%,
+      color(display-p3 0.278 0.941 0.173) 102.08%),
+    color(display-p3 1 1 1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.container figcaption p.small-text {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: calc(0.55rem + 0.5vw);
+}
+
+/* .container figcaption h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: calc(1rem + 2vw);
+} */
+
+figcaption button {
+  margin-top: 1rem;
+  font-size: calc(0.8rem + 0.2vw) !important;
+}
+
+.hero-section img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  figcaption button {
+    max-width: calc(100% - 50%);
+  }
+
+  .container figcaption h3 {
+    font-size: 4rem;
+  }
+
+  .container figcaption p.small-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:992px) {
+  .container figcaption h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: calc(1rem + 0.5vw);
+    line-height: 1.15;
+  }
+}

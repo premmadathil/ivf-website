@@ -1,0 +1,54 @@
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
+.nav-link {
+  color: #003f49 !important;
+  font-size: calc(11px + 0.15vw);
+  text-transform: uppercase;
+}
+
+
+
+.me-auto.navbar-nav {
+  position: relative;
+}
+
+a.nav-link.active {
+  position: relative;
+  font-weight: 700;
+}
+
+a.nav-link.active::after {
+  border-bottom: 3px solid #0ad9ca;
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: 4px;
+  left: 8px;
+}
+
+.fixed-header {
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.fixed-header.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.fixed-header.nav-visible {
+  transform: translateY(0);
+  backdrop-filter: blur(10px);
+  background-color: rgba(247, 248, 253, .87);
+  transition: all .3s;
+}
+
+@media (min-width:992px) {
+  .navbar-brand {
+    margin-right: 7.5rem !important;
+  }
+}
